@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="img/favicon/favicon.ico">
+
+	<!--slick слайдер-->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.1/slick-theme.css"/>
+
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="assets/img/svg/logo.svg" alt=""></a>
+		</div>
+		<div class="manu-header" onclick="openNav()">
+			<img src="assets/img/svg/menu.svg" alt="">
+		</div>
+
+		<div id="myNav" class="overlay">
+			<div class="search-header">
+				<a href="search.html"></a>
+			</div>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="assets/img/svg/close.svg" alt=""></a>
+			<div class="overlay-basic"></div>
+			<div class="overlay-content">
+				<a class="overlay-content__link" href="#">О музее</a>
+				<a class="overlay-content__link" href="#">Экспонаты</a>
+				<a class="overlay-content__link" href="#">События</a>
+				<a class="overlay-content__link" href="#">Новости</a>
+				<a class="overlay-content__link" href="#">Услуги</a>
+				<a class="overlay-content__link" href="#">Магазин</a>
+				<a class="overlay-content__link" href="#">Контакты</a>
+				<a class="overlay-content__link overlay-content__link_lang" href="#">EN</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="main-search">
+		<div class="logo">
+			<a href="index.html"><img src="assets/img/svg/logo.svg" alt=""></a>
+		</div>
+		<div class="manu-header" onclick="openNav()">
+			<img src="assets/img/svg/menu.svg" alt="">
+		</div>
+		<h2 class="main__title">ПОИСК</h2>
+		<form>
+			<div class="text text-2">
+				<div class="vertical-line"></div>
+				<input type="text" placeholder="" name="q">
+				<input type="submit" value="">
+			</div>
+		</form>
+		<p class="not">По вашему запросу ничего не найдено!</p>
+		<div class="main-search__result">
+			<div class="form">
+				<form>
+					<div class="text text-1">
+						<div class="vertical-line"></div>
+						<input type="text" placeholder="трансформер" name="q">
+						<input type="submit" value="">
+					</div>
+				</form>
+				<p>НАЙТИ</p>
+			</div>
+			<div class="search-result">
+				<div class="block-news">
+					<h2>Новости</h2>
+					<p>Минпромторг не будет запрещать продажу машин из рук в руки.
+						А дилерам поможет!</p>
+					<br/>
+					<p>Сбербанк с декабря будет выдавать водительские права с биометрией.
+						На очереди — удостоверение личности гражданина, которое станет
+						аналогом паспорта.</p>
+				</div>
+				<div class="block-exhibits">
+					<h2>Экспонаты</h2>
+					<p>Музей автомобилей под Тулой: место где загнивает сталь.</p>
+					<br/>
+					<p>Минпромторг не будет запрещать продажу машин из рук в руки.
+						А дилерам поможет!</p>
+				</div>
+				<div class="block-navigation">
+					<img class="prew" src="assets/img/svg/left-arrow.svg" alt="">
+						<a href="#">1</a>
+						<a href="#" class="active">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">...</a>
+						<a href="#">12</a>
+						<a href="#">13</a>
+					<img class="next" src="assets/img/svg/right-arrow.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<img class="menu-footer" src="assets/img/svg/Share.svg" alt="">
+		<footer class="footer">
+			<div class="logo">
+				<a href="index.html"><img src="assets/img/svg/logo.svg" alt=""></a>
+			</div>
+			<div class="footer-container">
+				<div class="footer__content">
+					<a class="footer__link" href="#museum">О музее</a>
+					<a class="footer__link" href="#expo">Экспонаты</a>
+					<a class="footer__link" href="developments.html">События</a>
+					<a class="footer__link" href="news.html">Новости</a>
+					<a class="footer__link" href="#service">Услуги</a>
+					<a class="footer__link" href="#shop">Магазин</a>
+					<a class="footer__link footer__link_kontakt" href="#contact">Контакты</a>
+					<a class="footer__link footer__link_lang">En</a>
+				</div>
+
+				<div class="footer__info">
+					<div class="footer__item">
+						<img src="assets/img/svg/geo.svg" alt="">
+						<p>НОВОКУЗНЕЦК<br/>
+							УЛ. ТОЛЬЯТТИ, 33А ОСТАНОВКА ЗАГС
+						</p>
+					</div>
+					<div class="footer__item">
+						<img src="assets/img/svg/phone.svg" alt="">
+						<p>тел. 8 (3843) 200-249<br/>
+							e-mail: museum@retropark.ru
+						</p>
+					</div>
+					<div class="footer__item">
+						<img src="assets/img/svg/clock.svg" alt="">
+						<p>ЧАСЫ РАБОТЫ:<br/>
+							РЕТРОПАРК: ЕЖЕДНЕВНО с 11:00–20:00<br/>
+							КАФЕ "SWEETER": ЕЖЕДНЕВНО с 10:00–22:00
+						</p>
+					</div>
+					<div class="footer__item">
+						<div class="social">
+							<img src="assets/img/svg/footer-telegram.svg" alt="">
+							<img src="assets/img/svg/facebook.svg" alt="">
+							<img src="assets/img/svg/instagram.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!--slick слайдер-->
+	<script src="assets/js/slick.js"></script>
+
+	<script src="assets/js/script.js"></script>
+
+</body>
+</html>

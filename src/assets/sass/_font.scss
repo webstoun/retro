@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url('./../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kizo Bold";
+  src: url("./../fonts/Kizo-Bold.eot");
+  src: url("./../fonts/Kizo-Bold.eot?#iefix") format("embedded-opentype"),
+  url('./../fonts/Kizo-Bold.woff') format('woff'),
+  url('./../fonts/Kizo-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kizo Regular";
+  src: url("./../fonts/Kizo-Regular.eot");
+  src: url("./../fonts/Kizo-Regular.eot?#iefix") format("embedded-opentype"),
+  url('./../fonts/Kizo-Regular.woff') format('woff'),
+  url('./../fonts/Kizo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

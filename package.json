@@ -1,0 +1,38 @@
+{
+  "name": "altarix-template-1.0.0",
+  "version": "1.0.0",
+  "description": "test template",
+  "author": "Ruslan Kadyrov",
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.2.0",
+    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-svg-sprite": "^1.4.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.1",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2",
+    "ws": "3.3.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "engines": {
+    "node": "8.10.0"
+  },
+  "dependencies": {
+    "gulp-pug": "^4.0.1",
+    "npm": "^6.2.0"
+  }
+}

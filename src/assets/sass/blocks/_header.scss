@@ -1,0 +1,163 @@
+header{
+  z-index: 10;
+  position: absolute;
+  top: 0;
+}
+.logo{
+  width: 163px;
+  height: 238px;
+  background-color: black;
+  margin-left: 59px;
+  text-align: right;
+  position: absolute;
+  z-index: 1;
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  img{
+    padding-top: 46px;
+  }
+}
+.search-header{
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  z-index: 1;
+  top: 38px;
+  right: 84px;
+  cursor: pointer;
+  background: url("../img/svg/search.svg") no-repeat center center;
+  a{
+    display: block;
+    width: 27px;
+    height: 27px;
+  }
+}
+.search-header:active{
+  background: url("../img/svg/search2.svg") no-repeat center center;
+}
+
+.manu-header{
+  position: absolute;
+  top: 38px;
+  right: 35px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+//MENU
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  .logo {
+    z-index: 99;
+  }
+  .manu-header{
+    z-index: 99;
+  }
+  .search-header{
+    z-index: 99;
+    top: 38px;
+    right: 84px;
+  }
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  font-size: 60px;
+  z-index: 99;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-basic{
+  height:100vh;
+  width: 100vw;
+  background-color: transparent;
+  position: absolute;
+  z-index: 81;
+}
+
+.overlay-content {
+  width: 512px;
+  height:100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 100px;
+  background-color: #171E29;
+  z-index: 82;
+  &__link{
+    padding: 7px;
+    display: block;
+    transition: 0.3s;
+    font-family: $Kizo-Bold;
+    font-size: 73px;
+    line-height: 63px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  &__link:hover{
+    color: #A57258;
+  }
+  &__link:active{
+    color: #A57258;
+  }
+  &__link_lang{
+    color: #A57258;
+    margin-top: 140px;
+    font-size:52px;
+    line-height:55px;
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header{
+
+  }
+  .logo{
+    width: 128px;
+    height: 188px;
+    margin-left: 35px;
+    img{
+      width: 146px;
+      height: 166px;
+      padding-top: 36px;
+    }
+  }
+
+  .overlay{
+    max-height: 900px;
+    overflow-y: hidden;
+    .logo{
+      display: none;
+    }
+  }
+  .overlay-basic{
+    background-color: transparent;
+  }
+  .overlay-content {
+    width: 372px;
+    max-height: 900px;
+  }
+
+}

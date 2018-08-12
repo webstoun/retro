@@ -1,0 +1,137 @@
+.footer{
+  width: 100vw;
+  min-height: 400px;
+  background-color: $darkblue;
+  position: relative;
+  &-container{
+    padding-left: 230px;
+    width: 100%;
+  }
+  &__content{
+    margin:0 auto;
+    padding: 77px 20px 0;
+    max-width: 1380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__link{
+    text-decoration: none;
+    font-family: $Kizo-Bold;
+    font-size: 52px;
+    line-height: 68px;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-right: 40px;
+  }
+  &__link:hover{
+    color: $brovn;
+  }
+  &__link_lang{
+    color: $brovn;
+    margin-left: 10px;
+  }
+  &__info{
+    max-width: 1400px;
+    margin:0 auto;
+    padding: 97px 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    p{
+      line-height: 18px;
+      margin-left: 21px;
+    }
+    .social{
+      width: 207px;
+      height: 45px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .footer{
+    padding-top: 38px;
+    .logo{
+      display: none;
+    }
+    &-container{
+      width: 100%;
+      padding-left: 0;
+    }
+    &__content{
+      margin: 0 auto;
+      padding: 0;
+      max-width:460px;
+      display: block;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &__link{
+      font-size: 49px;
+      line-height: 52px;
+      margin-right: 20px;
+    }
+    .footer__link_kontakt{
+      display: none;
+    }
+    &__info{
+      max-width: 460px;
+      margin: -30px auto 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__item{
+      margin-bottom: 30px;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      p{
+        line-height: 16px;
+        margin-left: 23px;
+      }
+      .social{
+        height: 40px;
+        margin: 20px 0 30px 10px;
+      }
+    }
+    &__link_lang{
+      font-size: 52px;
+      line-height: 55px;
+      position: absolute;
+      right: 34px;
+      bottom: 50px;
+      //z-index: 99;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    &__content {
+      padding: 0 5px;
+      margin: 0 auto;
+      max-width: 420px;
+      display: block;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .footer__info{
+      max-width: 420px;
+      padding: 30px 5px 0;
+      margin: 0 auto;
+    }
+  }
+}
